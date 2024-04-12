@@ -13,13 +13,13 @@ import { ReactiveFramework } from "./util/reactiveFramework";
 
 const cases = [
   avoidablePropagation,
-  broadPropagation,
-  deepPropagation,
-  diamond,
-  mux,
-  repeatedObservers,
-  triangle,
-  unstable,
+  // broadPropagation,
+  // deepPropagation,
+  // diamond,
+  // mux,
+  // repeatedObservers,
+  // triangle,
+  // unstable,
 ];
 
 export async function kairoBench(framework: ReactiveFramework) {

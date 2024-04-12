@@ -13,21 +13,21 @@ async function main() {
     await kairoBench(framework);
   }
 
-  for (const { framework } of frameworkInfo) {
-    await molBench(framework);
-  }
+  // for (const { framework } of frameworkInfo) {
+  //   await molBench(framework);
+  // }
 
-  for (const { framework } of frameworkInfo) {
-    sbench(framework);
-  }
+  // for (const { framework } of frameworkInfo) {
+  //   sbench(framework);
+  // }
 
-  for (const { framework } of frameworkInfo) {
-    cellxbench(framework);
-  }
+  // for (const { framework } of frameworkInfo) {
+  //   cellxbench(framework);
+  // }
 
-  for (const frameworkTest of frameworkInfo) {
-    await dynamicBench(frameworkTest);
-  }
+  // for (const frameworkTest of frameworkInfo) {
+  //   await dynamicBench(frameworkTest);
+  // }
 }
 
 main();

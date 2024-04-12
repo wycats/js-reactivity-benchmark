@@ -25,6 +25,12 @@ importers:
       '@solidjs/reactivity':
         specifier: ^0.0.9
         version: 0.0.9
+      '@starbeam-lite/core':
+        specifier: file:packages/starbeam-lite-core-0.0.1.tgz
+        version: file:packages/starbeam-lite-core-0.0.1.tgz(@starbeam-lite/shared@0.0.1)
+      '@starbeam-lite/shared':
+        specifier: file:packages/starbeam-lite-shared-0.0.1.tgz
+        version: file:packages/starbeam-lite-shared-0.0.1.tgz
       '@vue/reactivity':
         specifier: ^3.3.4
         version: 3.3.4
@@ -1633,4 +1639,24 @@ packages:
     resolution: {integrity: sha512-R3t9Nwl/LJnnpmwx0+Q7YcHtE6xUObnowwNskWCiqEMQXYYlkZiOOhF+N2R18PMILv8+fbzCLKAJvpvyxzafpQ==}
     dependencies:
       tslib: 2.6.2
+    dev: false
+
+  file:packages/starbeam-lite-core-0.0.1.tgz(@starbeam-lite/shared@0.0.1):
+    resolution: {integrity: sha512-wFL3N7RVYRhW3Ce4reZAimCBuL7ZJeJhyF1+rY5pbyyLKiXCceNub8AjYqovfgICzldnip2Su9RHIgwZn7bzJg==, tarball: file:packages/starbeam-lite-core-0.0.1.tgz}
+    id: file:packages/starbeam-lite-core-0.0.1.tgz
+    name: '@starbeam-lite/core'
+    version: 0.0.1
+    peerDependencies:
+      '@starbeam-lite/shared': ~0.0.1
+    peerDependenciesMeta:
+      '@starbeam-lite/shared':
+        optional: true
+    dependencies:
+      '@starbeam-lite/shared': file:packages/starbeam-lite-shared-0.0.1.tgz
+    dev: false
+
+  file:packages/starbeam-lite-shared-0.0.1.tgz:
+    resolution: {integrity: sha512-++xZqL3p+38xBrW+7cqMraspYQ/M/hpVc7ZbRVCuMUeW0ubr6Y3WyR7rpGgUJTyZEp/GKqicXP3TaiOKtC4eyA==, tarball: file:packages/starbeam-lite-shared-0.0.1.tgz}
+    name: '@starbeam-lite/shared'
+    version: 0.0.1
     dev: false

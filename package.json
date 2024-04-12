@@ -24,7 +24,9 @@
     "preact": "^10.17.1",
     "s-js": "^0.4.9",
     "solid-js": "^1.7.11",
-    "usignal": "^0.9.0"
+    "usignal": "^0.9.0",
+    "@starbeam-lite/core": "file:packages/starbeam-lite-core-0.0.1.tgz",
+    "@starbeam-lite/shared": "file:packages/starbeam-lite-shared-0.0.1.tgz"
   },
   "devDependencies": {
     "@types/node": "^20.5.1",

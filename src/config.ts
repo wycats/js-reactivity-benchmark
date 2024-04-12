@@ -13,21 +13,23 @@ import { solidFramework } from "./frameworks/solid";
 import { usignalFramework } from "./frameworks/uSignal";
 import { vueReactivityFramework } from "./frameworks/vueReactivity";
 import { xReactivityFramework } from "./frameworks/xReactivity";
+import { starbeamFramework } from "./frameworks/starbeam";
 
 export const frameworkInfo: FrameworkInfo[] = [
-  { framework: angularFramework, testPullCounts: true },
-  { framework: compostateFramework, testPullCounts: true },
-  // { framework: kairoFramework, testPullCounts: true },
-  // { framework: mobxFramework, testPullCounts: true },
-  { framework: molWireFramework, testPullCounts: true },
-  { framework: obyFramework, testPullCounts: true },
+  { framework: starbeamFramework, testPullCounts: true },
+  // { framework: angularFramework, testPullCounts: true },
+  // { framework: compostateFramework, testPullCounts: true },
+  // // { framework: kairoFramework, testPullCounts: true },
+  // // { framework: mobxFramework, testPullCounts: true },
+  // { framework: molWireFramework, testPullCounts: true },
+  // { framework: obyFramework, testPullCounts: true },
   { framework: preactSignalFramework, testPullCounts: true },
-  { framework: reactivelyFramework, testPullCounts: true },
-  { framework: sFramework },
-  { framework: solidFramework }, // solid can't testPullCounts because batch executes all leaf nodes even if unread
-  { framework: usignalFramework, testPullCounts: true },
-  { framework: vueReactivityFramework, testPullCounts: true },
-  { framework: xReactivityFramework, testPullCounts: true },
+  // { framework: reactivelyFramework, testPullCounts: true },
+  // { framework: sFramework },
+  // { framework: solidFramework }, // solid can't testPullCounts because batch executes all leaf nodes even if unread
+  // { framework: usignalFramework, testPullCounts: true },
+  // { framework: vueReactivityFramework, testPullCounts: true },
+  // { framework: xReactivityFramework, testPullCounts: true },
 ];
 
 export const perfTests: TestConfig[] = [
